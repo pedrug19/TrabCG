@@ -7,16 +7,10 @@
  *
  */
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <GL/freeglut.h>
-#include <GL/glu.h>
-#include <GL/gl.h>
-#include <math.h>
-#include <string.h>
+#include "estruturas.h"
+//#include "Aviao.c"
+//#include "Tiro.c"
 
-
-/*CÓDIGO DE TESTE APENAS!! NÃO SE APLICA AO CÓDIGO FINAL*/
 
 char title[] = "River Raid - Advanced";
 
@@ -162,4 +156,3 @@ int main(int argc, char** argv) {
     glutMainLoop();                 // Enter the infinite event-processing loop
     return 0;
 }
-

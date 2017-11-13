@@ -9,7 +9,7 @@ find_package(FREEGLUT REQUIRED)
 
 set(CMAKE_C_STANDARD 99)
 
-set(SOURCE_FILES main.c)
+set(SOURCE_FILES main.c estruturas.h)
 
 if(NOT ${OPENGL_FOUND})
     message("OPENGL not found")
@@ -23,7 +23,7 @@ include_directories(
         ${OPENGL_INCLUDE_DIR}
 )
 
-add_executable(TrabCG ${SOURCE_FILES})
+add_executable(TrabCG ${SOURCE_FILES} estruturas.h)
 link_directories(${OPENGL_gl_LIBRARY})
 target_link_libraries(${PROJECT_NAME}
         ${OPENGL_LIBRARY}
